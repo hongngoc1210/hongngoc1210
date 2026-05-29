@@ -94,16 +94,16 @@ My long-term goal is to build end-to-end data products that combine data enginee
 
 ---
 
-### ViTiki-ABSA — Vietnamese Aspect-Based Sentiment Analysis Dataset
+### ViTiki-ABSA - Vietnamese Aspect-Based Sentiment Analysis Benchmark
 
-* Contributed to a Vietnamese NLP project for Aspect-Based Sentiment Analysis using real-world Tiki product reviews.
-* Supported data collection, Vietnamese text preprocessing, and aspect–sentiment pair extraction.
-* Used Gemini API for semi-automatic labeling and assisted in label quality validation.
-* Worked with noisy Vietnamese review text, including emojis, abbreviations, informal language, and e-commerce-specific expressions.
-* Supported dataset preparation and model experimentation for aspect-level sentiment classification.
+* Built an end-to-end ABSA benchmark for Vietnamese Tiki product reviews using a 12-label `Aspect#Sentiment` multi-label formulation.
+* Developed the data pipeline for crawling, preprocessing, Gemini-assisted labeling, label normalization, and train/dev/test dataset preparation.
+* Benchmarked classical ML, deep learning, and Transformer approaches, including TF-IDF + LinearSVC, BiLSTM + Attention, and PhoBERT-base-v2.
+* Selected **PhoBERT-base-v2 multi-label** as the best model with **Pair Micro F1 = 0.8110**, **Exact Match = 0.5396**, and **Sentiment Macro F1 = 0.7887**.
+* Analyzed class imbalance across aspect-sentiment pairs and compared multi-label vs. aspect-conditioned PhoBERT formulations.
 
-**Tech Stack:** Python, BeautifulSoup, Gemini API, Pandas, NLP, HuggingFace, PyTorch, Transformer Models
-[View Repository](https://github.com/thybui1903/Tiki_ABSA)
+**Tech Stack:** Python, Pandas, BeautifulSoup, Gemini API, Scikit-learn, PyTorch, HuggingFace Transformers, PhoBERT, NLP
+[View Repository](https://github.com/hongngoc1210/tiki-aspect-based-sentiment-analysis)
 
 
 ---
